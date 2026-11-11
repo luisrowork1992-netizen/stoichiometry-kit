@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stoichiometry-kit"
+version = "0.1.0"
+description = "Chemical formula parsing, molar masses and exact equation balancing"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Luis Rodriguez" }]
+requires-python = ">=3.9"
+dependencies = []
+
+[project.optional-dependencies]
+notebooks = ["matplotlib", "jupyter"]
+
+[tool.setuptools]
+packages = ["stoichkit"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
